@@ -24,7 +24,7 @@ The output is Counter which is 4 bit in size.
 
 	You have to apply high value to reset, to reset the Counter output.
  
-![image](https://github.com/user-attachments/assets/efe1095e-989e-4005-b53b-e9dc50d4025c)
+![Screenshot 2024-11-22 223027](https://github.com/user-attachments/assets/09587353-db3e-4002-8635-8a6d88ba5bcf)
 
 ## Fig 1: 4 Bit Up/Down Counter
 
@@ -40,8 +40,9 @@ Functional Simulation:
 	source /cadence/install/cshrc (mention the path of the tools) 
       (The path of cshrc could vary depending on the installation destination)
       
-	After this you can see the window like below 
+	After this you can see the window like below
 
+![Screenshot 2024-11-22 224253](https://github.com/user-attachments/assets/39846f86-8646-4e66-b9f4-f60e2a9a0159)
 
 ## Fig 2: Invoke the Cadence Environment
 
@@ -74,12 +75,14 @@ Functional Simulation:
 	linux:/> nclaunch&                 // On subsequent calls to NCVERILOG
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
+![image](https://github.com/user-attachments/assets/8230c65c-364c-4579-bbd2-f5d6fb05b2f3)
 
 ## Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
+![Screenshot 2024-11-22 223247](https://github.com/user-attachments/assets/5a3db1a8-8320-404e-ad24-e34eefd27817)
 
 ## Fig 4: cds.lib file Creation
 
@@ -88,6 +91,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
+![image](https://github.com/user-attachments/assets/a8aa17e2-fc47-4e9a-a0df-106b829bcd6f)
 
 ## Fig 5: Selection of Don’t include any libraries
 
@@ -98,6 +102,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed.
 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+![Screenshot 2024-11-22 224113](https://github.com/user-attachments/assets/1088ebf3-1d50-4e3f-b933-3099a89d092e)
 
 ## Fig 6: Nclaunch Window
 
@@ -122,6 +127,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+![Screenshot 2024-11-22 224113](https://github.com/user-attachments/assets/077662d1-1174-4725-a9f9-10f09f756973)
 
 ## Fig 7: Compiled database in worklib
 
@@ -151,6 +157,7 @@ It contains statements that map logical library names to their physical director
 9.	It also establishes net connectivity and prepares all of this for simulation
     
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
+![Screenshot 2024-11-22 224113](https://github.com/user-attachments/assets/6bd7138a-3ea1-4551-820a-3f033f235cfe)
 
 ## Fig 8: Elaboration Launch Option
 
@@ -163,10 +170,13 @@ It contains statements that map logical library names to their physical director
 	Simulation allow to dump design and test bench signals into a waveform 
 
 	Steps for simulation – Run the simulation command with simulator options
+![Screenshot 2024-11-22 224132](https://github.com/user-attachments/assets/59aefea1-7484-4f9a-aa08-ab89b0097e3e)
 
 ## Fig 9: Design Browser window for simulation
+![image](https://github.com/user-attachments/assets/23b73b32-574d-4d5b-8b4b-bc3daf879af3)
 
 ## Fig 10: Simulation Waveform Window
+![Screenshot 2024-11-22 224045](https://github.com/user-attachments/assets/8e2094d6-de97-4b08-b6e6-0ed8c40186a9)
 
 ## Fig 11: Simulation Waveform Window
 
